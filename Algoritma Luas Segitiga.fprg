@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-14 10:59:51 AM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtQzJIREs1Q1U7MjAyMi0xMi0xNDsxMDo0ODozMiBBTTsyNzU0"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtQzJIREs1Q1U7MjAyMi0xMi0xNDsxMDo1OTo1MSBBTTsyOzI4NjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="setengah" type="Real" array="False" size=""/>
+            <declare name="alas, tinggi, luas" type="Integer" array="False" size=""/>
+            <input variable="setengah"/>
+            <input variable="alas"/>
+            <input variable="tinggi"/>
+            <assign variable="luas" expression="setengah*alas*tinggi"/>
+            <output expression="luas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

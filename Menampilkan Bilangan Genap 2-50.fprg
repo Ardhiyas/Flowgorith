@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-25 09:06:28 PM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtQzJIREs1Q1U7MjAyMi0xMi0yNTswODo0NToyMSBQTTsyNzcz"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtQzJIREs1Q1U7MjAyMi0xMi0yNTswOTowNjoyOCBQTTsyOzI4ODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bil" type="Integer" array="False" size=""/>
+            <assign variable="bil" expression="0"/>
+            <do expression="bil&lt;=50">
+                <assign variable="bil" expression="bil+1"/>
+                <if expression="bil%2=0">
+                    <then>
+                        <if expression="bil=6">
+                            <then>
+                                <assign variable="bil" expression="bil+2"/>
+                                <output expression="bil" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="bil" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-14 05:30:39 PM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtQzJIREs1Q1U7MjAyMi0xMi0xNDsxMToyMTo1OSBBTTsyNzU1"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtQzJIREs1Q1U7MjAyMi0xMi0xNDswNTozMDozOSBQTTs1OzI4ODM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tahun" type="Integer" array="False" size=""/>
+            <input variable="tahun"/>
+            <if expression="tahun %400==0">
+                <then>
+                    <output expression="&quot;bukan tahun kabisat&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="tahun %100==0">
+                        <then>
+                            <output expression="&quot;bukan tahun kabisat&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="tahun %4==0">
+                                <then>
+                                    <output expression="&quot;tampil tahun kabisat&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;bukan tahun kabisat&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

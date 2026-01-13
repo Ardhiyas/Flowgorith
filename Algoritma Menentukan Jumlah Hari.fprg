@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-07-12 05:50:57 PM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtQzJIREs1Q1U7MjAyMi0xMi0yMDsxMDo1MDoyOCBQTTsyNzY0"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtQzJIREs1Q1U7MjAyMy0wNy0xMjswNTo1MDo1NyBQTTs0OzI4ODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bulan, tahun" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Nama Bulan&quot;" newline="True"/>
+            <input variable="bulan"/>
+            <output expression="&quot;Masukan Tahun&quot;" newline="True"/>
+            <input variable="tahun"/>
+            <if expression="bulan=1||bulan=3||bulan=5||bulan=7||bulan=8||bulan=10">
+                <then>
+                    <output expression="&quot;jumlah hari=31&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="bulan=4||bulan=6||bulan=9||bulan=11">
+                        <then>
+                            <output expression="&quot;jumlah hari=30&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="bulan=2">
+                                <then>
+                                    <if expression="tahun%4=0">
+                                        <then>
+                                            <output expression="&quot;jumlah hari=29&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;jumlah hari=28&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;bulan tidak valid&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

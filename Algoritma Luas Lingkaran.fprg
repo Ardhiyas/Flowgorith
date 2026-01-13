@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-14 11:18:52 AM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtQzJIREs1Q1U7MjAyMi0xMi0xNDsxMDo1OTo1NiBBTTsyNzYy"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtQzJIREs1Q1U7MjAyMi0xMi0xNDsxMToxODo1MiBBTTszOzI4NjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="phi" type="Real" array="False" size=""/>
+            <declare name="r, luas" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukan nilai r&quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="luas" expression="3.14*r*r"/>
+            <output expression="&quot;Luas Lingkaran adalah&quot; &amp; luas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

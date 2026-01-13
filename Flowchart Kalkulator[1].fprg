@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-18 04:31:19 PM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtQzJIREs1Q1U7MjAyMy0wMS0wNDswNzowNzoyOCBQTTsyNzcz"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtQzJIREs1Q1U7MjAyMy0wMS0xODswNDozMToxOSBQTTs0MjsyOTMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kode" type="String" array="False" size=""/>
+            <declare name="X" type="Integer" array="False" size=""/>
+            <declare name="Y" type="Integer" array="False" size=""/>
+            <declare name="ULANGAN" type="String" array="False" size=""/>
+            <output expression="&quot;======= PROGRAM KALKULATOR KELOMPOK 1 =======&quot;" newline="True"/>
+            <output expression="&quot;============= ANGGOTA KELOMPOK =============&quot;" newline="True"/>
+            <output expression="&quot;WAHYU ARDHIYAS S. (22533547)&quot;" newline="True"/>
+            <output expression="&quot;HARLIA RIZKI FADILA (22533557)&quot;" newline="True"/>
+            <output expression="&quot;HANIFA MUKAROMATUN N. (22533561)&quot;" newline="True"/>
+            <output expression="&quot;'IZAAZ ANDIKA A.R. (22533562)&quot;" newline="True"/>
+            <do expression="ULANGAN = &quot;YA&quot;">
+                <output expression="&quot;======= PROGRAM KALKULATOR KELOMPOK 1 =======&quot;" newline="True"/>
+                <output expression="&quot;====MASUKAN KODE YANG ANDA MAU====&quot;" newline="True"/>
+                <output expression="&quot;1. T UNTUK PENJUMLAHAN&quot;" newline="True"/>
+                <output expression="&quot;2. N UNTUK PENGURANGAN&quot;" newline="True"/>
+                <output expression="&quot;3. K UNTUK PERKALIAN&quot;" newline="True"/>
+                <output expression="&quot;4. B UNTUK PEMBAGIAN&quot;" newline="True"/>
+                <output expression="&quot;5. M UNTUK MODULO ATAU SISA BAGI&quot;" newline="True"/>
+                <input variable="kode"/>
+                <if expression="kode = &quot;T&quot;">
+                    <then>
+                        <output expression="&quot;MASUKAN NILAI X&quot;" newline="True"/>
+                        <input variable="X"/>
+                        <output expression="&quot;MASUKAN NILAI Y&quot;" newline="True"/>
+                        <input variable="Y"/>
+                        <output expression="&quot;HASIL PENJUMLAHAN NILAI X+Y&quot;" newline="True"/>
+                        <output expression="X+Y" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="kode = &quot;N&quot;">
+                            <then>
+                                <output expression="&quot;MASUKAN NILAI X&quot;" newline="True"/>
+                                <input variable="X"/>
+                                <output expression="&quot;MASUKAN NILAI Y&quot;" newline="True"/>
+                                <input variable="Y"/>
+                                <output expression="&quot;HASIL PENJUMLAHAN NILAI X-Y&quot;" newline="True"/>
+                                <output expression="X-Y" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="kode = &quot;K&quot;">
+                                    <then>
+                                        <output expression="&quot;MASUKAN NILAI X&quot;" newline="True"/>
+                                        <input variable="X"/>
+                                        <output expression="&quot;MASUKAN NILAI Y&quot;" newline="True"/>
+                                        <input variable="Y"/>
+                                        <output expression="&quot;HASIL PENJUMLAHAN NILAI X*Y&quot;" newline="True"/>
+                                        <output expression="X*Y" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="kode = &quot;B&quot;">
+                                            <then>
+                                                <output expression="&quot;MASUKAN NILAI X&quot;" newline="True"/>
+                                                <input variable="X"/>
+                                                <output expression="&quot;MASUKAN NILAI Y&quot;" newline="True"/>
+                                                <input variable="Y"/>
+                                                <output expression="&quot;HASIL PENJUMLAHAN NILAI X/Y&quot;" newline="True"/>
+                                                <output expression="X/Y" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <if expression="kode = &quot;M&quot;">
+                                                    <then>
+                                                        <output expression="&quot;MASUKAN NILAI X&quot;" newline="True"/>
+                                                        <input variable="X"/>
+                                                        <output expression="&quot;MASUKAN NILAI Y&quot;" newline="True"/>
+                                                        <input variable="Y"/>
+                                                        <output expression="&quot;HASIL PENJUMLAHAN NILAI X%Y&quot;" newline="True"/>
+                                                        <output expression="X%Y" newline="True"/>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;APAKAH ANDA AKAN MENGULANG PROSES PERHITUNGAN (YA/TIDAK)&quot;" newline="True"/>
+                <input variable="ULANGAN"/>
+            </do>
+            <output expression="&quot;TERIMA KASIH :)&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
